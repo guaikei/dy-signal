@@ -6,6 +6,11 @@ name: dy-signal
 description: 抖音公开数据异动信号（只读）：关键词搜索、博主作品、作品详情、评论、热榜。触发：抖音搜索、热搜、评论、需求挖掘、痛点、作品详情、博主作品、对标账号、播放量、选题、舆情、竞品。小红书、快手、B站、微博、公众号不要用本技能。sec_uid、aweme_id、douyin search、douyin hot、douyin detail、douyin comments。
 license: MIT
 version: 1.5.1
+display_name: "抖音异动信号｜互动突增·爆款冒头·负面评论·数据波动"
+display_name_en: "Douyin Signal"
+description_zh: "抖音异动信号：基于抖音公开数据的只读监测接口，支持关键词搜索视频与图文、用户搜索、博主作品与互动数据、单条作品详情、视频图文评论抓取、实时热榜六类采集，并对同一作品的多次抓取结果做对比分析，识别互动数突增的爆款冒头、负面评论激增与数据异常波动，输出结构化 JSON（含标题、作者、点赞/评论/收藏/分享、标签、链接、发布时间），可直接导入 Excel/BI 或交给 AI 生成选题库、竞品对比、舆情预警。按量 Token 单次最多 10000 条；包月 Token 搜索/用户/作品最多 30、评论最多 50，超限退出码 1（PLAN_LIMIT）。零第三方依赖，Node.js 16.14+ 内置模块直接运行；需配置环境变量 GUAIKEI_API_TOKEN（可通过 www.guaikei.com 开通获取）。不登录、不发布、不点赞、不评论，无封号风险。"
+description_en: "Douyin (TikTok China) public-data anomaly signal skill: keyword search for videos and image posts, user search, creator post feeds with engagement stats, single-video details, comment scraping, and real-time hot list; compares repeated captures of the same work to surface engagement spikes, rising viral hits, surging negative comments, and abnormal data swings. Outputs structured JSON (title, author, digg/comment/share/collect counts, tags, links, publish time) ready for Excel/BI or AI-driven topic libraries and reputation alerts. Pay-as-you-go tokens up to 10000 items per run; monthly tokens limited to 30 for search/users/posts and 50 for comments, exceeding the plan limit exits with code 1 (PLAN_LIMIT). Zero third-party dependencies, runs on Node.js 16.14+ built-ins only; requires the GUAIKEI_API_TOKEN environment variable (available via www.guaikei.com). Read-only and login-free: no posting, liking, or commenting, so no account-ban risk."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎬"
